@@ -7,39 +7,42 @@
     <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Kalkulator BMI</h1>
     </header>
     <Main>
+
         <!-- Left Side -->
-        <section>
+        <section class="layout">
             <!-- Introduction -->
             <article>
-                <p>Introduction</p>
+                <p>Berat badan ideal adalah impian semua orang. 
+                Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. 
+                Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
             </article>
             <!-- Form -->
             <Form>
-                <div>
-                <label for="jenis-kelamin">Jenis Kelamin</label>
-                <input type="radio" id="pria" name="gender" value="pria" required>
-                <label for="pria">Pria</label>
-                <input type="radio" id="wanita" name="gender" value="wanita" required>
-                <label for="wanita">Wanita</label>
+                <div class="gender">
+                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                    <input type="radio" id="pria" name="gender" value="pria" required>
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="gender" value="wanita" required>
+                    <label for="wanita">Wanita</label>
                 </div>
-                <div>
+                <div class="form-input">
                     <label for="input-berat-badan">Berat Badan (kg)</label>
                     <input type="number" id="input-berat-badan">
                 </div>
-                <div>
+                <div class="form-input">
                     <label for="input-usia">Usia (tahun)</label>
                     <input type="number" id="input-usia">
                 </div>
-                <div>
+                <div class="form-input">
                     <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
                     <input type="number" id="input-tinggi-badan">
                 </div>
                 <div>
-                    <button>Hitung BMI</button>
+                    <button id="hitung-bmi">Hitung BMI</button>
                     <button>Reset</button>
                 </div>
             </Form>
@@ -49,47 +52,51 @@
                     <h2>Keunggulan Fitur</h2>
                 </header>
                 <p>
-                    <ol>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ol class="keunggulan-fitur">
+                        <li>Menghitung berat badan.</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
                     </ol>
                 </p>
-                <br>
-                <p>hanya boleh digunakan</p>
-                <br>
-                <p>memberi gambaran</p>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+                <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilKalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M².ogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M².</p>
             </article>
         </section> 
+
         <!-- Right Side -->
-        <section>
+        <section class="layout">
             <!-- Result -->
             <header>
-                <h2>Hasil</h2>
+                <h2 class="hasil">Hasil</h2>
             </header>
-            <section>
+            <section class="hasil-bmi">
+                <!-- Perhitungan BMI dan kesimpulannya -->
+                <script></script>
                 <span id="result-bmi">0</span>
+                <script></script>
+                <button id="download-hasil-bmi">Download Hasil BMI</button>
             </section>
             <!-- Bagian Konsultasi -->
-            <div>>
-                <button>a</button>
-                <button>b</button>
+            <P>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga.
+            Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</P>
+            <div>
+                <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button>Registrasi Online Ahli Gizi</button>
             </div>
             <!-- Penjelasan Tambahan BMI -->
-            <p>BMII blablabla</p>
+            <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
             <!-- Penyakit -->
-            <article>
-                <h2>Penyakit</h2>
+            <div class="asal-kegemukan">
+                <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
                 <ul>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
+                    <li id="penyakit">Diabetes</li>
+                    <li id="penyakit">Hipertensi</li>
+                    <li id="penyakit">Sakit Jantung</li>
+                    <li id="penyakit">Osteoarthritis</li>
                 </ul>
-            </article>
-            <!-- Tombol Konsultasi Dokter -->
-            <div>
-                <button>a</button>
-                <button>b</button>
+                <!-- Tombol Konsultasi Dokter -->
+                <button>Konsultasi Dokter Via Aplikasi</button>
+                <button>Registrasi Online Sekarang</button>
             </div>
         </section>
     </Main>

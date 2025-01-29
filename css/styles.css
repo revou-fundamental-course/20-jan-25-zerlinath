@@ -1,0 +1,121 @@
+/* File CSS Kalkulator BMI */
+
+/* Layout kanan-kiri */
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-align: justify;
+}
+
+.layout {
+    width: 50%;
+}
+
+body {
+    background-color: beige;
+}
+
+.main-header {
+    text-align: center;
+}
+
+/* Form Input BMI */
+
+form {
+    background-color: rgba(143, 255, 255, 0.815);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.gender {
+    padding-bottom: 10px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#input-berat-badan {
+    line-height: 2;
+}
+
+#input-usia {
+    line-height: 2;
+}
+
+#input-tinggi-badan {
+    line-height: 2;
+}
+
+/* Ini ga kebaca */
+
+#hitung-bmi {
+    color: black;
+}
+
+/* Feature Information */
+
+h2 {
+    margin-bottom: 0px;
+}
+
+.keunggulan-fitur {
+    margin-top: 0px;
+    padding-left: 25px;
+}
+/* Hasil Input */
+
+.hasil {
+    text-align: center;
+}
+
+#result-bmi {
+    font-size: xx-large;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.hasil-bmi {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    text-align: center;
+    line-height: 2;
+}
+
+#download-hasil-bmi {
+    width: 200px;
+}
+
+/* Penyakit */
+
+h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.asal-kegemukan {
+    background-color: cornflowerblue;
+    text-align: center;
+    line-height: 2;
+}
+
+#penyakit {
+    display: list-item;
+    list-style: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
