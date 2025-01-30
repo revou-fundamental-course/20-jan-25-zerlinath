@@ -13,25 +13,26 @@ main {
 }
 
 body {
-    background-color: #F2EFE7;
+    background-color: #E1EACD;
 }
 
 .main-header {
     text-align: center;
+    background-color: #B1C29E;
 }
 
 /* Form Input BMI */
 
 .hitung-bmi {
-    background-color: orangered;
+    background-color: #F9F6E6;
 }
 
 .reset {
-    background: red;
+    background: #F0A04B;
 }
 
 form {
-    background-color: rgba(143, 255, 255, 0.815);
+    background-color: #FADA7A;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
@@ -85,7 +86,7 @@ h2 {
 .hasil-bmi {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: #A5B68D;
     text-align: center;
     line-height: 2;
 }
@@ -107,7 +108,7 @@ ul {
 }
 
 .asal-kegemukan {
-    background-color: cornflowerblue;
+    background-color: #DF9755;
     text-align: center;
     line-height: 2;
 }
@@ -120,4 +121,15 @@ ul {
 /* Footer */
 footer {
     text-align: center;
+}
+
+/* Responsif: Layout satu kolom untuk layar kecil */
+@media only screen and (max-width: 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .layout {
+        width: 100%;
+    }
 }

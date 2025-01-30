@@ -24,7 +24,6 @@ function kalkulatorbmi() {
     resultbmi = resultbmi.toFixed(2);
 
     /* Kategori hasil perhitungan BMI dan Simpulan input pengguna */
-
     let kategori = '';
     let simpulan = '';
     if (resultbmi < 18.5) {
