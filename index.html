@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI</title>
+
+    <!-- css -->
     <link rel="stylesheet" href="css\styles.css">
+
 </head>
 <body>
     <header class="main-header">
@@ -23,7 +26,7 @@
             <!-- Form -->
             <Form>
                 <div class="gender">
-                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                    <p class="jenis-kelamin">Jenis Kelamin</p>
                     <input type="radio" id="pria" name="gender" value="pria" required>
                     <label for="pria">Pria</label>
                     <input type="radio" id="wanita" name="gender" value="wanita" required>
@@ -31,19 +34,19 @@
                 </div>
                 <div class="form-input">
                     <label for="input-berat-badan">Berat Badan (kg)</label>
-                    <input type="number" id="input-berat-badan">
+                    <input type="number" id="input-berat-badan" required>
                 </div>
                 <div class="form-input">
                     <label for="input-usia">Usia (tahun)</label>
-                    <input type="number" id="input-usia">
+                    <input type="number" id="input-usia" required>
                 </div>
                 <div class="form-input">
                     <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
-                    <input type="number" id="input-tinggi-badan">
+                    <input type="number" id="input-tinggi-badan" required>
                 </div>
                 <div>
-                    <button id="hitung-bmi">Hitung BMI</button>
-                    <button>Reset</button>
+                    <button class="hitung-bmi" type="button" onclick="kalkulatorbmi()">Hitung BMI</button>
+                    <button class="reset">Reset</button>
                 </div>
             </Form>
             <!-- Feature Information -->
@@ -69,13 +72,15 @@
             <header>
                 <h2 class="hasil">Hasil</h2>
             </header>
-            <section class="hasil-bmi">
+            <div class="hasil-bmi">
                 <!-- Perhitungan BMI dan kesimpulannya -->
-                <script></script>
-                <span id="result-bmi">0</span>
-                <script></script>
+                <p id="kategori"></p>
+                <p id="result-bmi">0</p>
+                <p id="simpulan-input"></p>
+                <div>
                 <button id="download-hasil-bmi">Download Hasil BMI</button>
-            </section>
+                </div>
+            </div>
             <!-- Bagian Konsultasi -->
             <P>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga.
             Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</P>
@@ -101,5 +106,9 @@
         </section>
     </Main>
     <footer>Made by zerlin</footer>
+
+    <!-- Java Script -->
+    <script src="./js/script.js"></script>
+
 </body>
 </html>

@@ -13,7 +13,7 @@ main {
 }
 
 body {
-    background-color: beige;
+    background-color: #F2EFE7;
 }
 
 .main-header {
@@ -21,6 +21,14 @@ body {
 }
 
 /* Form Input BMI */
+
+.hitung-bmi {
+    background-color: orangered;
+}
+
+.reset {
+    background: red;
+}
 
 form {
     background-color: rgba(143, 255, 255, 0.815);
@@ -50,12 +58,6 @@ form {
 
 #input-tinggi-badan {
     line-height: 2;
-}
-
-/* Ini ga kebaca */
-
-#hitung-bmi {
-    color: black;
 }
 
 /* Feature Information */
